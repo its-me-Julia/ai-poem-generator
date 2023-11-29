@@ -1,0 +1,102 @@
+:root {
+  --mint-color: #adefd1ff;
+  --sailor-blue-color: #00203fff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.header {
+  color: var(--sailor-blue-color);
+  text-align: center;
+}
+
+form {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  width: 65%;
+}
+
+#form-input {
+  width: 40%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--sailor-blue-color);
+  color: var(--sailor-blue-color);
+}
+
+#submit-button {
+  width: 10%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--mint-color);
+  background-color: var(--mint-color);
+  color: var(--sailor-blue-color);
+  font-weight: 600;
+}
+
+.poem-div {
+  margin-top: 40px;
+}
+
+.poem {
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px;
+  padding-left: 30px;
+  margin: auto;
+  text-align: left;
+  width: 60%;
+  background-color: var(--mint-color);
+  border-left: 3px solid var(--sailor-blue-color);
+  color: var(--sailor-blue-color);
+}
+
+footer {
+  color: var(--sailor-blue-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.generator-div {
+  text-align: center;
+}
+
+.generator {
+  font-weight: 800;
+  color: var(--sailor-blue-color);
+  animation: blink 1500ms linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.1;
+  }
+}
+
+a {
+  color: var(--sailor-blue-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
