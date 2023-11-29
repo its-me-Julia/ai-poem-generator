@@ -65,6 +65,7 @@ form {
 }
 
 footer {
+  margin-top: 50px;
   color: var(--sailor-blue-color);
   text-align: center;
   font-size: 14px;

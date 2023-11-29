@@ -9,8 +9,8 @@ function getInfo(event) {
   generatorDiv.classList.remove("hidden");
   let prompt = `Please write a poem about ${submitInput.value}`;
   let context = `You are a poem writing AI Assistant and you write short 4-lines poems based on information given by user. 
-  User information is: ${submitInput.value}. Please always divide each line with <br />. Sign a poem by 'AI Poem Generator', 
-  every time only on the bottom of the poem and put it into <strong></strong> HTML tags please.`;
+  User information is: ${submitInput.value}. You break each line of poem with HTML tag br for the new, separate line. You also sign
+  your poems with 'AI Poem Generator'. Your signature is always on the bottom of the poem on a new line. You always make your signature bold`;
   let apiKey = `b2dt6f634c03ca0b6c80o88e820fa880`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
